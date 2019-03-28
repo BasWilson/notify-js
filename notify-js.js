@@ -42,7 +42,11 @@ const styles = `
 
 class NotifyJS {
 
-  constructor(settings = {duration: 3000, message: 'NotifyJS Notification', timer: false}, style = {color: 'crimson', textColor: 'white'}) {
+  /**
+   * @param {Object} settings 
+   * @param {Object} style 
+   */
+  constructor(settings = { duration: 3000, message: 'NotifyJS Notification', timer: false }, style = { color: 'crimson', textColor: 'white' }) {
 
     // Settings
     this.duration = typeof settings.duration == 'undefined' ? 3000 : settings.duration;
@@ -62,18 +66,18 @@ class NotifyJS {
 
   create() {
     notifications.push(this);
-    
+
     if (document.getElementById('notifications') == null) {
 
       var css = document.createElement('style');
       css.type = 'text/css';
-      
+
       if (css.styleSheet) css.styleSheet.cssText = styles;
       else css.appendChild(document.createTextNode(styles));
-      
+
       document.getElementsByTagName("head")[0].appendChild(css);
 
-        document.body.innerHTML += `
+      document.body.innerHTML += `
         <!-- Notification -->
         <div class="notifications-container" id="notifications"></div>
         <!-- Notification end -->
@@ -106,10 +110,10 @@ class NotifyJS {
   }
 }
 
-function deleteNotification (id) {
-    for (let i = 0; i < notifications.length; i++) {
-      if (notifications[i].id == id) {
-        return notifications[i].delete();
-      }
+function deleteNotification(id) {
+  for (let i = 0; i < notifications.length; i++) {
+    if (notifications[i].id == id) {
+      return notifications[i].delete();
     }
   }
+}
