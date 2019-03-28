@@ -2,7 +2,7 @@
 A lightweight and easy to use Notification class to use on your next website.  
 Sweet **vanilla** JS 🍦
 
-<img src="https://raw.githubusercontent.com/BasWilson/notify-js/master/examples/preview.png" width="auto" height="300" />
+<img src="https://raw.githubusercontent.com/BasWilson/notify-js/master/examples/preview.png" width="70%" height="auto" />
 
 #### Setup
 Simply download and add the notify-js.js file to you html file. 
