@@ -14,7 +14,7 @@ function onLogin (username) {
     // Create a new notification
     new NotifyJS(
         {
-            duration: 3, // Display for 3 seconds
+            duration: 3000, // Display for 3 seconds
             message: `Welcome back ${username}!` // Message
         },
         {
