@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Notify-JS Examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../notify-js.js"></script>
+</head>
+
+<body>
+    <style>
+        button {
+            border: none;
+            outline: none;
+            padding: 10px;
+            background-color: rgb(19, 19, 19);
+            border-radius: 3px;
+            color: white;
+            font-size: 20px;
+            margin: 10px;
+            transition: .2 ease-in-out;
+        }
+
+        button:hover {
+            transform: translateY(1px);
+            cursor: pointer;
+        }
+
+        .container {
+            width: 60%;
+        }
+    </style>
+    <script>
+        function defaultNotification() {
+            new NotifyJS(
+                {
+                    duration: 5000,
+                    message: "Default notification",
+                }
+            )
+        }
+        function defaultNotificationTimer() {
+            new NotifyJS(
+                {
+                    duration: 5000,
+                    message: "Notification with timer",
+                    timer: true
+                }
+            )
+        }
+
+        function notificationStyle() {
+            new NotifyJS(
+                {
+                    duration: 5000,
+                    message: "Notification with custom colors",
+                },
+                {
+                    color: 'rgb(245,233,23)',
+                    textColor: 'crimson'
+                }
+            )
+        }
+        function notificationCSS() {
+            new NotifyJS(
+                {
+                    duration: 5000,
+                    message: "Notification with some custom CSS to create a sexy notification",
+                },
+                {
+                    textColor: 'white',
+                    customCSSBox: `border-bottom: 3px solid salmon; background-color: rgb(106, 0, 255);`
+                }
+            )
+        }
+
+    </script>
+    <div class="container">
+        <button onclick="defaultNotification()">Default notification</button>
+        <button onclick="defaultNotificationTimer()">Notification with timer</button>
+        <button onclick="notificationStyle()">Notification with custom colors</button>
+        <button onclick="notificationCSS()">Notification with custom CSS</button>
+    </div>
+
+</body>
+
+</html>
