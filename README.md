@@ -1,5 +1,6 @@
 ### Notify-JS
 A lightweight and easy to use Notification class to use on your next website.
+No need for Jquery, just vanilla JS 🍦.
 
 ![Preview](https://raw.githubusercontent.com/BasWilson/notify-js/master/examples/preview.png)
 
