@@ -1,6 +1,8 @@
 ### Notify-JS
 A lightweight and easy to use Notification class to use on your next website.
 
+![Preview](https://raw.githubusercontent.com/BasWilson/notify-js/blob/master/examples/preview.png"Preview")
+
 #### Setup
 Simply download and add the notify-js.js file to you html file. 
 `<script src="notify-js.js"></script>`
@@ -32,7 +34,7 @@ The NotifyJS class takes two parameters:
 
 | Variable       | Description   | Type  | Example  |
 | :-------------|:------------- | :-----| :-----|
-| duration      | Time in seconds that the notification will show for. | int | `3` |
+| duration      | Time in ms that the notification will show for. | int | `3000` |
 | message       | Message you want to show to the user.| string | `"Hello"` |
 | timer         | Show countdown | boolean | `true` |
 
